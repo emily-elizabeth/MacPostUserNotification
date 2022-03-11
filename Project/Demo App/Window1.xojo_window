@@ -393,7 +393,7 @@ End
 #tag Events Button4
 	#tag Event
 		Sub Pressed()
-		  MacPostUserNotification.PostUserNotification self.NotificationTitle.Text, _
+		  MacPostUserNotification self.NotificationTitle.Text, _
 		  self.NotificationSubtitle.Text, self.NotificationInformativeText.Text, Nil, _
 		  self.NotificationIdentifier.Text
 		End Sub

@@ -1,7 +1,7 @@
 #tag Module
 Protected Module MacPostUserNotification
-	#tag Method, Flags = &h1
-		Protected Sub PostUserNotification(title As String, subTitle As String, informativeText As String, contentImage As Picture, Optional identifier As String)
+	#tag Method, Flags = &h0
+		Sub MacPostUserNotification(title As String, subTitle As String, informativeText As String, contentImage As Picture, Optional identifier As String)
 		  #if TargetCocoa
 		    Declare Function alloc Lib "Cocoa" Selector "alloc" (classRef As Ptr) As Ptr
 		    Declare Function defaultUserNotificationCenter Lib "Cocoa" Selector "defaultUserNotificationCenter" (classRef As Ptr) As Ptr
